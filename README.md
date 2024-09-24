@@ -29,3 +29,12 @@ The `checkpoints/` directory contains pretrained models for the DLFD method and 
 
 ### Citation
 <pre>
+@misc{choi2024distributionlevelfeaturedistancingmachine,
+      title={Distribution-Level Feature Distancing for Machine Unlearning: Towards a Better Trade-off Between Model Utility and Forgetting}, 
+      author={Dasol Choi and Dongbin Na},
+      year={2024},
+      eprint={2409.14747},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2409.14747}, 
+}
