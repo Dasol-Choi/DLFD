@@ -39,3 +39,4 @@ The `checkpoints/` directory contains pretrained models for the DLFD method and 
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2409.14747}, 
 }
+<\pre>
