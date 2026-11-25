@@ -99,10 +99,9 @@ def train_dlfd(dlfm_model, data_loaders, criterion, optimizer, device, perturbat
                perturbed_feature = dlfm_model(perturbed_retain.cuda())
 
                forget_feature = dlfm_model(x_forget.cuda())
-               outputs_retain = dlfm_model(x_retain.cuda())
 
-               # Compute OT loss and classification loss 
-               ot_loss = compute_ot_loss(outputs_retain, forget_feature) * forget_weight
+               # Compute OT loss and classification loss
+               ot_loss = compute_ot_loss(perturbed_feature, forget_feature) * forget_weight
                cls_loss = criterion(perturbed_feature, y_retain) * retain_weight
                total_loss = -cls_loss + ot_loss
 
